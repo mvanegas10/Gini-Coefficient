@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
 <meta charset="utf-8">
-<title>Issues Ratings</title>
+<title>Gini Coefficient</title>
 <link rel="shortcut icon" href="">
 <style>
 
@@ -64,7 +64,7 @@ body {
 </style>
 </head>
 <body>
-<script src="http://d3js.org/d3.v3.js"></script>
+<script src="https://d3js.org/d3.v3.js"></script>
 <script>
 
 var margin = {top: 20, right: 200, bottom: 100, left: 50},
@@ -219,7 +219,7 @@ d3.csv("gini.csv", function(error, data) {
       .attr("x", -10)
       .attr("dy", ".71em")
       .style("text-anchor", "end")
-      .text("Gini Indicator");
+      .text("Gini Coefficient");
 
   var issue = svg.selectAll(".issue")
       .data(categories) // Select nested data and append to new svg group elements
